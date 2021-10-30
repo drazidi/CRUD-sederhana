@@ -5,16 +5,7 @@ require 'fungsi.php';
 <body>
 <form method="post">
 
-<?php
-// $ambilsemuadatastockz = mysqli_query($conn,"select * from stock s INNER JOIN keluar k INNER JOIN invoice i on s.idbarang=k.idbarang && i.idinvoice = k.idinvoice where k.idinvoice='".$_GET['idinvoice']."'");
-// $dataz=mysqli_fetch_array($ambilsemuadatastockz);
-// $nomorinvoicez = $dataz['nomor_invoice'];
-//                                             $penerima = $dataz['penerima'];
-//                                             echo"Nomor Invoice : $nomorinvoicez";
-
-//         ?>
-                  
-       
+<?php    
 
 <?php 
 $datastock = mysqli_query($conn, "select*from barang where id='".$_GET['id']."'");
